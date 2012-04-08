@@ -13,6 +13,9 @@
            fetch="https://github.com/CyanogenMod/"
            revision="ics" />
 
+    <remote  name="synergy"
+    fetch="https://github.com/IceCreamSpaTreatment/" />
+
   <default remote="aosp"
            sync-j="4" />
 
@@ -39,6 +42,7 @@
   <project path="device/htc/supersonic" name="AOKP/android_device_htc_supersonic" remote="gh" revision="ics" />
   <project path="device/htc/vivow" name="AOKP/android_device_htc_vivow" remote="gh" revision="ics" />
   <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="gh" revision="gingerbread" />
+  <project path="device/htc/holiday" name="android_device_htc_holiday" remote="synergy" revision="master" />
   <project path="device/htc/msm7x30-common" name="AOKP/android_device_htc_msm7x30-common" remote="gh" revision="ics" />
   <project path="device/htc/msm8660-common" name="CyanogenMod/android_device_htc_msm8660-common" remote="gh" revision="ics" />
   <project path="device/htc/pyramid" name="AOKP/android_device_htc_pyramid" remote="gh" revision="ics" />
@@ -285,7 +289,7 @@
   <project path="vendor/aokp" name="AOKP/vendor_aokp" remote="gh" revision="ics" />
   <project path="vendor/moto" name="AOKP/vendor_moto" remote="gh" revision="ics" />
   <project path="vendor/hp/tenderloin" name="AOKP/vendor_hp_tenderloin" remote="gh" revision="aokp" />
-  <project path="vendor/htc" name="AOKP/vendor_htc" remote="gh" revision="ics" />
+  <project path="vendor/htc" name="proprietary_vendor_htc" remote="synergy" revision="ics" />
   <project path="vendor/htc/pyramid" name="AOKP/android_vendor_htc_pyramid" remote="gh" revision="ics" />
   <project path="vendor/lge" name="AOKP/vendor_lge" remote="gh" revision="ics" />
   <project path="vendor/aokp/bot" name="AOKP/pseudo_buildbot" remote="gh" revision="ics" />
@@ -303,6 +307,6 @@
   <project path="packages/apps/GanOptimizer" name="CyanogenMod/android_packages_apps_GanOptimizer" remote="gh" revision="gb-release-7.2" />
   <project path="packages/apps/AppWidgetPicker" name="AOKP/packages_apps_AppWidgetPicker" remote="gh" revision="ics" />
 
-  <project path="platform_manifest" name="AOKP/platform_manifest" remote="gh" revision="ics" />
+  <project path="platform_manifest" name="AOKP/platform_manifest" remote="synergy" revision="ics" />
 
 </manifest>
