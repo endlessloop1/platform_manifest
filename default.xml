@@ -13,8 +13,11 @@
            fetch="https://github.com/CyanogenMod/"
            revision="ics" />
 
-    <remote  name="synergy"
-    fetch="https://github.com/IceCreamSpaTreatment/" />
+  <remote  name="twisted"
+           fetch="https://github.com/ThePlayground/" />
+
+  <remote  name="synergy"
+           fetch="https://github.com/IceCreamSpaTreatment/" />
 
   <default remote="aosp"
            sync-j="4" />
@@ -23,13 +26,13 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" remote="aosp" revision="refs/tags/android-4.0.4_r1.1" />
-  <project path="bionic" name="AOKP/bionic" remote="gh" revision="ics" />
+  <project path="bionic" name="android_bionic" remote="twisted" revision="ics" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="gh" revision="ics" />
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.0.4_r1.1" />
-  <project path="dalvik" name="platform/dalvik" remote="aosp" revision="refs/tags/android-4.0.4_r1.1" />
-  <project path="development" name="AOKP/platform_development" remote="gh" revision="ics" />
+  <project path="dalvik" name="android_dalvik" remote="twisted" revision="ics" />
+  <project path="development" name="android_development" remote="twisted" revision="ics" />
   <project path="device/acer/a500" name="AOKP/device_acer_a500" remote="gh" revision="ics" />
   <project path="device/amazon/otter" name="AOKP/device_amazon_otter" remote="gh" revision="ics" />
   <project path="device/asus/tf101" name="AOKP/device_asus_tf101" remote="gh" revision="ics" />
@@ -41,7 +44,7 @@
   <project path="device/htc/inc" name="AOKP/android_device_htc_inc" remote="gh" revision="ics" />
   <project path="device/htc/supersonic" name="AOKP/android_device_htc_supersonic" remote="gh" revision="ics" />
   <project path="device/htc/vivow" name="AOKP/android_device_htc_vivow" remote="gh" revision="ics" />
-  <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="gh" revision="gingerbread" />
+  <project path="device/htc/common" name="android_device_htc_common" remote="twisted" revision="ics" />
   <project path="device/htc/holiday" name="android_device_htc_holiday" remote="synergy" revision="master" />
   <project path="device/htc/msm7x30-common" name="AOKP/android_device_htc_msm7x30-common" remote="gh" revision="ics" />
   <project path="device/htc/msm8660-common" name="CyanogenMod/android_device_htc_msm8660-common" remote="gh" revision="ics" />
@@ -205,15 +208,15 @@
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="frameworks/support" name="platform/frameworks/support" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="hardware/cm" name="AOKP/hardware_cm" remote="gh" revision="ics" />
-  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="gh" revision="ics" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="twisted" revision="ics" />
   <project path="hardware/invensense" name="platform/hardware/invensense" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
-  <project path="hardware/libhardware" name="AOKP/android_hardware_libhardware" remote="gh" revision="ics" />
-  <project path="hardware/libhardware_legacy" name="AOKP/android_hardware_libhardware_legacy" remote="gh" revision="ics" />
-  <project path="hardware/qcom/display" name="AOKP/android_hardware_qcom_display" remote="gh" revision="ics" />
-  <project path="hardware/qcom/camera" name="AOKP/android_hardware_qcom_camera" remote="gh" revision="ics" />
-  <project path="hardware/msm7k" name="AOKP/android_hardware_msm7k" remote="gh" revision="ics" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="twisted" revision="ics" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="twisted" revision="ics" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="twisted" revision="ics" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="twisted" revision="ics" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="twisted" revision="ics" />
   <project path="hardware/qcom/gps" name="AOKP/hardware_qcom_gps" remote="gh" revision="ics" />
-  <project path="hardware/qcom/media" name="AOKP/android_hardware_qcom_media" remote="gh" revision="ics" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="twisted" revision="ics" />
   <project path="hardware/ril" name="AOKP/android_hardware_ril" remote="gh" revision="ics" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
@@ -226,7 +229,7 @@
   <project path="packages/apps/Browser" name="AOKP/packages_apps_Browser" remote="gh" revision="ics" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
-  <project path="packages/apps/Camera" name="AOKP/packages_apps_Camera" remote="gh" revision="ics" />
+  <project path="packages/apps/Camera" name="android_packages_apps_Camera" remote="twisted" revision="ics" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="packages/apps/Contacts" name="AOKP/packages_apps_Contacts" remote="gh" revision="ics" />
@@ -278,7 +281,7 @@
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="prebuilt" name="platform/prebuilt" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
   <project path="sdk" name="platform/sdk" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
-  <project path="system/bluetooth" name="AOKP/system_bluetooth" remote="gh" revision="ics"/>
+  <project path="system/bluetooth" name="android_system_bluetooth" remote="twisted" revision="ics" />
   <project path="system/core" name="AOKP/system_core" remote="gh" revision="ics" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" remote="gh" revision="ics" />
   <project path="system/media" name="platform/system/media" remote="aosp" revision="refs/tags/android-4.0.4_r1.1"/>
@@ -296,12 +299,14 @@
   <project path="vendor/amazon/otter" name="AOKP/vendor_amazon_otter" remote="gh" revision="ics" />
   <project path="vendor/acer/a500" name="AOKP/vendor_acer_a500" remote="gh" revision="ics" />
   <project path="vendor/asus/tf101" name="AOKP/vendor_proprietary_asus_tf101" remote="gh" revision="ics" />
-  <project path="vendor/qcom/opensource/omx/mm-core" name="AOKP/android_vendor_qcom_opensource_omx_mm-core" remote="gh" revision="ics" />
-  <project path="vendor/qcom/opensource/omx/mm-video" name="AOKP/android_vendor_qcom_opensource_omx_mm-video" remote="gh" revision="ics" />
-
-  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="ics" />
+  <project path="vendor/qcom" name="proprietary_vendor_qcom" remote="twisted" revision="ics" />
+  <project path="vendor/twisted" name="proprietary_vendor_twisted" remote="twisted" revision="ics" />
+  <project path="vendor/qcom/opensource/omx/mm-core" name="android_vendor_qcom_opensource_omx_mm-core" remote="twisted" revision="ics" />
+  <project path="vendor/qcom/opensource/omx/mm-video" name="android_vendor_qcom_opensource_omx_mm-video" remote="twisted" revision="ics" />
+  <project path="vendor/qcom/opensource/v8" name="android_vendor_qcom_opensource_v8" remote="twisted" revision="ics" />
+  <project path="external/busybox" name="android_external_busybox" remote="twisted" revision="ics" />
   <project path="system/su" name="AOKP/android_system_su" remote="gh" revision="ics" />
-  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="gh" revision="ics" />
+  <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="twisted" revision="ics" />
   <project path="packages/apps/ROMControl" name="AOKP/packages_apps_ROMControl" remote="gh" revision="ics" />
   <project path="packages/apps/Trebuchet" name="CyanogenMod/android_packages_apps_Trebuchet" remote="gh" revision="ics" />
   <project path="packages/apps/GanOptimizer" name="CyanogenMod/android_packages_apps_GanOptimizer" remote="gh" revision="gb-release-7.2" />
