@@ -13,6 +13,9 @@
            fetch="https://github.com/CyanogenMod/"
            revision="ics" />
 
+    <remote  name="twisted"
+    fetch="https://github.com/ThePlayground/" />
+
     <remote  name="synergy"
     fetch="https://github.com/IceCreamSpaTreatment/" />
 
@@ -44,7 +47,7 @@
   <project path="device/htc/common" name="CyanogenMod/android_device_htc_common" remote="gh" revision="gingerbread" />
   <project path="device/htc/holiday" name="android_device_htc_holiday" remote="synergy" revision="master" />
   <project path="device/htc/msm7x30-common" name="AOKP/android_device_htc_msm7x30-common" remote="gh" revision="ics" />
-  <project path="device/htc/msm8660-common" name="CyanogenMod/android_device_htc_msm8660-common" remote="gh" revision="ics" />
+    <project path="device/htc/msm8660-common" name="android_device_htc_msm8660-common" remote="twisted" revision="ics" />
   <project path="device/htc/pyramid" name="AOKP/android_device_htc_pyramid" remote="gh" revision="ics" />
   <project path="device/hp/tenderloin" name="AOKP/android_device_hp_tenderloin" remote="gh" revision="ics" />
   <project path="device/lge/p990" name="AOKP/android_device_lge_p990" remote="gh" revision="ics" />
