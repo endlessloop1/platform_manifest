@@ -2,6 +2,8 @@
   <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
     
   <remote  name="synergy" fetch="https://github.com/IceCreamSpaTreatment/" />
+
+  <remote  name="twisted" fetch="https://github.com/ThePlayground/" />
   <default remote="caf" revision="ics"/>
   <project name="device/common"/>
   <project name="device/generic/goldfish"/>
@@ -12,6 +14,7 @@
   <project name="device/samsung/maguro"/>
   <project name="device/samsung/tuna"/>
   <project name="device/ti/panda"/>
+  <project path="device/htc/common" name="android_device_htc_common" remote="twisted" revision="ics" />
   <project path="device/htc/holiday" name="android_device_htc_holiday" remote="synergy" revision="master" />
   <project name="kernel/lk" path="bootable/bootloader/lk" revision="refs/heads/master"/>
   <project name="kernel/msm" path="kernel" revision="refs/heads/msm-3.0"/>
